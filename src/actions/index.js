@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "AIzaSyDMOpHxUPtPGKb3lWs4613QuIBZbUpJT7k";
+const API_KEY = "AIzaSyDU_G8DMzAi3EEwp-89sJ4W96MQAk0r7Mc";
 const ROOT_URL = "https://www.googleapis.com/youtube/v3/search";
 
 export const FETCH_VIDEO = "FETCH_VIDEO";
@@ -15,7 +15,7 @@ export function fetchVideo(param) {
   // TODO: make params as filter param checkboxes to be enabled/disabled
   // https://developers.google.com/youtube/v3/docs/search/list#parameters
   const params = {
-    part: 'snippet',
+    part: "snippet",
     key: API_KEY,
     q: param.term,
     maxResults: param.sMaxResults,
